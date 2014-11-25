@@ -61,8 +61,7 @@ class hubot::install {
                    Class['nodejs'],
                    Package[$::hubot::build_deps],
                  ],
-    provider  => 'npm',
-    notify    => Class['hubot::config']
+    provider  => 'npm'
   }
 
   package { 'coffee-script':
