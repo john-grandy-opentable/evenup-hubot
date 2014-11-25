@@ -51,7 +51,7 @@ class hubot::install {
 
   $version = $::hubot::hubot_version ? {
     ''      => 'present',
-    default => $::hubot::hubot_version},
+    default => $::hubot::hubot_version,
   }
 
   package { 'hubot':
